@@ -10,6 +10,10 @@ import itemcontainer from "@/components/itemcontainer"
     export default {
         components: {
             itemcontainer
+        },
+        created(){
+            //进入题目页面,开始计时
+            this.$store.commit('REMBER_TIME')
         }
     }
 </script>
